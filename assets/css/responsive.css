@@ -1,0 +1,268 @@
+/* xxl */
+@media (max-width: 1399.98px) {
+}
+/* xl */
+@media (max-width: 1199.98px) {
+    /*============= 2. About =============*/
+    .about__img {
+        width: 100%;
+    }
+    .about__list {
+        margin-top: 40px;
+    }
+    .about__item--text {
+        margin-top: 8px;
+    }
+
+    /*============= 3. Features =============*/
+    .features__content {
+        max-width: 370px;
+    }
+
+    /*============= 4. Service =============*/
+    .service__img {
+        width: 100%;
+    }
+
+    /*============= 7. Subscription =============*/
+    .subscription__star-1 {
+        left: 42px;
+    }
+    .subscription__star-2 {
+        right: 42px;
+    }
+    .subscription__star-3 {
+        left: 86px;
+    }
+    .subscription__star-4 {
+        right: 86px;
+    }
+}
+/* lg */
+@media (max-width: 991.98px) {
+    /*============= Header =============*/
+    .logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .toggle-menu svg {
+        width: 24px;
+    }
+
+    .menu-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.5s;
+        transition-duration: opacity visibility;
+    }
+
+    .menu-drawer {
+        position: fixed;
+        inset: 0 40% 0 0;
+        background: #fff;
+        padding: 60px;
+        z-index: 2;
+        transform: translateX(-100%);
+        transition: transform 0.5s;
+    }
+
+    .menu-drawer ul {
+        margin-top: 30px;
+        color: #333;
+    }
+    .menu-drawer ul li {
+        border-bottom: 1px solid #e9e9e9;
+    }
+    .menu-drawer ul img {
+        width: 12px;
+        filter: brightness(0) saturate(100%) invert(44%) sepia(11%)
+            saturate(346%) hue-rotate(184deg) brightness(92%) contrast(84%);
+    }
+    .menu-drawer ul a {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 18px 0;
+    }
+
+    .menu-drawer ul li:last-child {
+        border: none;
+    }
+
+    .menu-checkbox:checked ~ .menu-overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+    .menu-checkbox:checked ~ .menu-drawer {
+        transform: translateX(0);
+    }
+
+    /*============= 7. Subscription =============*/
+    .subscription__star-1 {
+        top: 20px;
+        left: 20px;
+    }
+    .subscription__star-2 {
+        top: 20px;
+        right: 20px;
+    }
+    .subscription__star-3,
+    .subscription__star-4 {
+        display: none;
+    }
+
+    /*============= Footer =============*/
+    .footer__content {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    .footer__column4 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
+/* md */
+@media (max-width: 767.98px) {
+    .menu-drawer {
+        padding: 40px;
+    }
+
+    /*============= 3. Features =============*/
+    .features__inner {
+        flex-wrap: wrap-reverse;
+    }
+    .features__content {
+        max-width: 100%;
+    }
+
+    /*============= 4. Service =============*/
+    .service__title {
+        margin-top: 0;
+    }
+
+    /*============= 5. Review =============*/
+    .review__top {
+        margin-bottom: 50px;
+    }
+
+    .blog__btn {
+        margin-top: 12px;
+        text-align: left;
+    }
+
+    /*============= 7. Subscription =============*/
+    .subscription__star-1,
+    .subscription__star-2,
+    .subscription__star-3,
+    .subscription__star-4 {
+        display: none;
+    }
+
+    /*============= Footer =============*/
+    .footer__column4 {
+        grid-column-end: 4;
+    }
+}
+/* sm */
+@media (max-width: 575.98px) {
+}
+
+/* ================================ COMMON ================================ */
+.d-block {
+    display: block !important;
+}
+
+.d-flex {
+    display: flex !important;
+}
+
+.d-grid {
+    display: grid !important;
+}
+
+.d-none {
+    display: none !important;
+}
+
+/* xxl */
+@media (max-width: 1399.98px) {
+    .d-xxl-block {
+        display: block !important;
+    }
+    .d-xxl-flex {
+        display: flex !important;
+    }
+    .d-xxl-grid {
+        display: grid !important;
+    }
+    .d-xxl-none {
+        display: none !important;
+    }
+}
+/* xl */
+@media (max-width: 1199.98px) {
+    .d-xl-block {
+        display: block !important;
+    }
+    .d-xl-flex {
+        display: flex !important;
+    }
+    .d-xl-grid {
+        display: grid !important;
+    }
+    .d-xl-none {
+        display: none !important;
+    }
+}
+/* lg */
+@media (max-width: 991.98px) {
+    .d-lg-block {
+        display: block !important;
+    }
+    .d-lg-flex {
+        display: flex !important;
+    }
+    .d-lg-grid {
+        display: grid !important;
+    }
+    .d-lg-none {
+        display: none !important;
+    }
+}
+/* md */
+@media (max-width: 767.98px) {
+    .d-md-block {
+        display: block !important;
+    }
+    .d-md-flex {
+        display: flex !important;
+    }
+    .d-md-grid {
+        display: grid !important;
+    }
+    .d-md-none {
+        display: none !important;
+    }
+}
+/* sm */
+@media (max-width: 575.98px) {
+    .d-sm-block {
+        display: block !important;
+    }
+    .d-sm-flex {
+        display: flex !important;
+    }
+    .d-sm-grid {
+        display: grid !important;
+    }
+    .d-sm-none {
+        display: none !important;
+    }
+}
